@@ -1174,13 +1174,16 @@ body {
 
 /* Tombol */
 .download-btn{
-    display:inline-flex;
+    display:flex;
     align-items:center;
-    justify-content:center;
-    gap:10px;
+    justify-content:center;   /* Tengah horizontal */
 
-    padding:10px 20px;
-    border-radius:30px;
+    width:280px;              /* Lebar tombol */
+    height:48px;              /* Tinggi tombol */
+
+    gap:8px;
+
+    padding:0 20px;
 
     background:linear-gradient(135deg,#FFD700,#D4AF37,#B8860B);
 
@@ -1188,16 +1191,12 @@ body {
     text-decoration:none !important;
 
     font-size:13px;
-    font-weight:700 !important;
+    font-weight:700;
 
-    letter-spacing:.6px;
-    text-transform:uppercase;
-
+    border-radius:25px;
     border:2px solid #FFD700;
 
-    box-shadow:0 0 15px rgba(255,215,0,.45);
-
-    transition:.3s;
+    text-align:center;        /* Teks rata tengah */
 }
 
 .download-btn:hover{
