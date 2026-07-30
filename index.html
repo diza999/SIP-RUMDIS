@@ -1150,6 +1150,87 @@ body {
     white-space:nowrap;
 }
 
+/* =========================================
+   TOMBOL DOWNLOAD FILE
+========================================= */
+.download-item{
+    list-style:none;
+    display:flex;
+    justify-content:center;   /* tombol di tengah */
+    align-items:center;
+    position:relative;
+    margin:18px 0;
+}
+
+/* Lingkaran kuning kosong */
+.download-badge{
+    position:absolute;
+    left:18px;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#FFD54A;
+}
+
+/* Tombol */
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:10px 20px;
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#FFD700,#D4AF37,#B8860B);
+
+    color:#fff !important;
+    text-decoration:none !important;
+
+    font-size:13px;
+    font-weight:700 !important;
+
+    letter-spacing:.6px;
+    text-transform:uppercase;
+
+    border:2px solid #FFD700;
+
+    box-shadow:0 0 15px rgba(255,215,0,.45);
+
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:linear-gradient(135deg,#FFE766,#FFD700,#DAA520);
+    color:#111 !important;
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 0 25px rgba(255,215,0,.75);
+}
+
+.download-btn span{
+    font-size:22px;
+}
+
+/* Hilangkan badge kuning pada item download */
+.download-item::before{
+    display:none !important;
+    content:none !important;
+}
+
+.download-item::after{
+    display:none !important;
+    content:none !important;
+}
+
+.download-item{
+    list-style:none !important;
+    padding-left:0 !important;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
 </style>
 
 <style>
@@ -1551,8 +1632,16 @@ body {
                 <li>
                     Mencantumkan nomor HP pemohon
                 </li>
+                </ol>
 
-            </ol>
+                <div class="download-item">
+                    <a href="SURAT PERNYATAAN.pdf"
+                        download
+                        class="download-btn">
+                      📥 DOWNLOAD SURAT PERNYATAAN
+                    </a>
+              </div>
+                 
 
             <div class="syarat-note">
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
@@ -1657,6 +1746,14 @@ body {
                 </li>
 
             </ol>
+
+            <div class="download-item">
+                    <a href="SURAT PERNYATAAN.pdf"
+                        download
+                        class="download-btn">
+                      📥 DOWNLOAD SURAT PERNYATAAN
+                    </a>
+              </div>
 
             <div class="syarat-note">
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !.
