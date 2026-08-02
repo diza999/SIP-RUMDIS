@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP RUMDIS</title>
+<title>INFO PERS LANMAR SURABAYA</title>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -86,10 +86,8 @@ body {
 
 .subtitle {
     margin-top: 10px;
-    color: #f7be06;
-    font-size: 24px;
-    font-weight: 800;
-    text-align: center;
+    color:  #f5b505;
+    font-size: 16px;
 }
 
 .btn {
@@ -313,7 +311,7 @@ body {
 
 
 /* =====================================
-   HALAMAN KENAIKAN PANGKAT dipakai sip dinas
+   HALAMAN KENAIKAN PANGKAT
 ===================================== */
 .pangkat-page {
     width: 100%;
@@ -469,69 +467,9 @@ body {
     background-attachment: fixed;
 }
 
-
-
-/* =====================================
-   HALAMAN PERPANJANGAN SIP DINAS
-===================================== */
-#PerpanjanganSipPage{
-    background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-/* =====================================
-   HALAMAN PEMBUATAN SIP DINAS
-===================================== */
-#mekanismePensiunPage1{
-    background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#mekanismePensiunPage .mekanisme-pensiun-page1{
-    width:100%;
-    max-width:1050px;
-    padding:35px;
-    border-radius:22px;
-
-    background:
-        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
-        url("mekanisme.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.55);
-}
-
-
 /* =====================================
    HALAMAN PENSIUN PRAJURIT
 ===================================== */
-
-#persyaratanPensiunPage{
-    background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* Ganti dengan nama file background */
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 #persyaratanPensiunPage{
     background:
@@ -594,7 +532,7 @@ body {
 }
 
 /* =====================================
-   HALAMAN MEKANISME PENSIUN
+   HALAMAN MEKANISME PENSIUN 
 ===================================== */
 
 #mekanismePensiunPage{
@@ -625,12 +563,17 @@ body {
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
+.mekanismePensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
 /* =====================================
-   HALAMAN PEMBUATAN SIP OVB
+   HALAMAN PESIUN KOLOM  
 ===================================== */
-#penbuatan{
+
+#PensiunPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -641,19 +584,7 @@ body {
     background-attachment: fixed;
 }
 
-
-#mekanismePensiunPage2{
-    background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#mekanismePensiunPage2 .mekanisme-pensiun-page{
+#PensiunPage .pensiun-page{
     width:100%;
     max-width:1050px;
     padding:35px;
@@ -670,12 +601,17 @@ body {
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
+.PensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 /* =====================================
-   HALAMAN MEKANISME PERPANJANGAN SIP
+   HALAMAN PESIUN KOLOM  persyaratanPensiunPage
 ===================================== */
 
-#PerpanjanganSip{
+#persyaratanPensiunPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -686,7 +622,7 @@ body {
     background-attachment: fixed;
 }
 
-#PerpanjanganSip .PerpanjanganSip-page{
+#persyaratanPensiunPage .persyaratanPensiunPage-page{
     width:100%;
     max-width:1050px;
     padding:35px;
@@ -702,6 +638,12 @@ body {
 
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
+
+.persyaratanPensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 /* =====================================
    HALAMAN TABEL KENAIKAN PANGKAT
@@ -736,6 +678,19 @@ body {
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
+/* FOTO TABEL */
+.kenkat-table-image{
+    width:100%;
+    max-width:none;
+    height:auto;
+    display:block;
+}
+
+.kenkat-image-wrapper{
+    display:flex;
+    justify-content:center;
+    margin:25px 0;
+}
 
 .reguler-page {
     width: 100%;
@@ -906,7 +861,6 @@ body {
 
     left: 50% !important;
     transform: translateX(-50%) !important;
-
     bottom: 65px !important;
 
     width: 130px !important;
@@ -1008,230 +962,6 @@ body {
     flex-shrink: 0 !important;
 }
 
-#regulerPerwiraPage .syarat-box{
-    position: relative;
-}
-
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN PERPANJANGAN
-========================================= */
-
-#regulerPerwiraPage .admin-wa{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    width: 220px;
-    height: 42px;
-
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: #25D366;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
-}
-
-#regulerPerwiraPage .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
-}
-
-#regulerPerwiraPage .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
-}
-
-#regulerPerwiraPage .admin-wa span{
-    white-space:nowrap;
-}
-
-
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN BUAT BARU
-========================================= */
-
-#mekanismePensiunPage2 .admin-wa{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    width: 220px;
-    height: 42px;
-
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: #25D366;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
-}
-
-#mekanismePensiunPage2 .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
-}
-
-#mekanismePensiunPage2 .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
-}
-
-#mekanismePensiunPage2 .admin-wa span{
-    white-space:nowrap;
-}
-
-
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN BUAT OVB
-========================================= */
-
-#mekanismePensiunPage .admin-wa{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    width: 220px;
-    height: 42px;
-
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: #25D366;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
-}
-
-#mekanismePensiunPage .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
-}
-
-#mekanismePensiunPage .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
-}
-
-#mekanismePensiunPage .admin-wa span{
-    white-space:nowrap;
-}
-
-/* =========================================
-   TOMBOL DOWNLOAD FILE
-========================================= */
-.download-item{
-    list-style:none;
-    display:flex;
-    justify-content:center;   /* tombol di tengah */
-    align-items:center;
-    position:relative;
-    margin:18px 0;
-}
-
-/* Lingkaran kuning kosong */
-.download-badge{
-    position:absolute;
-    left:18px;
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    background:#FFD54A;
-}
-
-/* Tombol */
-.download-btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;   /* Tengah horizontal */
-
-    width:280px;              /* Lebar tombol */
-    height:48px;              /* Tinggi tombol */
-
-    gap:8px;
-
-    padding:0 20px;
-
-    background:linear-gradient(135deg,#FFD700,#D4AF37,#B8860B);
-
-    color:#fff !important;
-    text-decoration:none !important;
-
-    font-size:13px;
-    font-weight:700;
-
-    border-radius:25px;
-    border:2px solid #FFD700;
-
-    text-align:center;        /* Teks rata tengah */
-}
-
-.download-btn:hover{
-    background:linear-gradient(135deg,#FFE766,#FFD700,#DAA520);
-    color:#111 !important;
-    transform:translateY(-3px) scale(1.05);
-    box-shadow:0 0 25px rgba(255,215,0,.75);
-}
-
-.download-btn span{
-    font-size:22px;
-}
-
-/* Hilangkan badge kuning pada item download */
-.download-item::before{
-    display:none !important;
-    content:none !important;
-}
-
-.download-item::after{
-    display:none !important;
-    content:none !important;
-}
-
-.download-item{
-    list-style:none !important;
-    padding-left:0 !important;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
 </style>
 
 <style>
@@ -1262,9 +992,9 @@ body {
              class="logo"
              alt="Logo LANMAR Surabaya">
 
-        <h1 class="title">SIP RUMDIS</h1>
+        <h1 class="title">INFO PERS LANMAR SURABAYA</h1>
         <p class="subtitle">
-           Surat Ijin Penghuni Rumah Dinas
+            
         </p>
          
         <p class="subtitle">
@@ -1358,25 +1088,25 @@ body {
                  alt="Logo LANMAR Surabaya">
 
             <h1 class="dashboard-title">
-                SIP RUMDIS
+                INFO PERS LANMAR SURABAYA
             </h1>
 
         </div>
 
         <div class="menu-grid">
- 
+
+            <button class="menu-card"
+                    onclick="showPage('pangkatPage')">
+                <div class="menu-icon">🎖️</div>
+                <h3>KENAIKAN PANGKAT PRAJURIT</h3>
+            </button>
+
             <button class="menu-card"
                     onclick="showPage('pensiunPage')">
                 <div class="menu-icon">📋</div>
-                <h3>PEMBUATAN SIP DINAS</h3>
+                <h3>PENSIUN PRAJURIT</h3>
             </button>
 
-             <button class="menu-card"
-                    onclick="showPage('regulerPerwiraPage')">
-                <div class="pangkat-icon">🎖️</div>
-                <h3>PERPANJANGAN SIP DINAS</h3>
-            </button>
-                        
         </div>
 
         <div style="text-align:center;">
@@ -1385,7 +1115,7 @@ body {
             </button>
         </div>
 
-    <a href="https://wa.me/6281231178171"
+    <a href="https://wa.me/6281331846862"
    target="_blank"
    rel="noopener noreferrer"
    class="admin-wa">
@@ -1400,7 +1130,7 @@ body {
               d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
     </svg>
 
-    <span>Kapten Mar Yudi Wiyanto</span>
+    <span>Brian Ba Ur Kenkat</span>
 
 </a>
         
@@ -1412,116 +1142,62 @@ body {
 </section>
 
 
+
 <!-- =========================
-     PERSYARATAN PERPANJANGAN SIP
+     HALAMAN KENAIKAN PANGKAT
 ========================= -->
-<section id="pensiunPage" class="page">
+<section id="pangkatPage" class="page">
     <div class="pangkat-page">
+
         <div class="pangkat-header">
-            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
-            <h1 class="pangkat-title">SIP RUMDIS</h1>
-            <p class="pangkat-subtitle"></p>
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="pangkat-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="pangkat-title">
+                INFO PERS LANMAR SURABAYA
+            </h1>
+
         </div>
-        
+
         <div class="pangkat-menu">
-            <button class="pangkat-card" onclick="showPage('mekanismePensiunPage1')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PROSEDUR PEMBUATAN SIP DINAS</h3>
-            </button><button class="pangkat-card" onclick="showPage('buatbaru')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP DINAS</h3>
-            </button>
-        </div>
 
-            <div class="pangkat-back">
-                <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ DASHBOARD</button>
-            </div>
-            
-            <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
-            </div>
-
-        </div>
-</section>
-
-
-
-
-<!-- =========================
-     PPOSEDUR PEMBUATAN SIP DINAS
-========================= -->
-<section id="mekanismePensiunPage1" class="page">
-    <div class="reguler-page mekanisme-pensiun-page1">
-        <div class="reguler-header">
-
-            <img src="LOGO LANMAR EMAS.png"
-                 class="reguler-logo"
-                 alt="Logo LANMAR Surabaya">
-
-            <h1 class="reguler-title">
-                
-            </h1>
-
-            
-        </div>
-
-        <div class="syarat-box">
-
-            <h2 class="syarat-heading">
-                PPOSEDUR PEMBUATAN SIP DINAS
-            </h2>
-
-            <ol class="syarat-list">
-
-                <li>
-                    Watpers LANMAR Surabaya menerima syarmin dari pemohon
-
-                </li>
-
-                <li>
-                    Watpers LANMAR Surabaya memproses pembuatan SIP Baru sesuai kebutuhan pemohon (Rumdis/Flat)
-                </li>
-
-                <li>
-                    Setelah SIP diproses kemudian diajukan TTD Paspers
-                </li>
-
-                <li>
-                    Setelah TTD Paspers, Stempel SIP oleh set LANMAR Surabaya
-                </li>
-
-                <li>
-                    SIP untuk Flat berwarna Kuning, Rumdis berwarna Biru
-                </li>
-
-                <li>
-                   Perpanjangan SIP Flat 1 tahun sekali, Rumdis 3 tahun sekali setelah SIP selesai, diserahkan/diambil oleh pemohon
-                </li>
-
-                <li>
-                    Watpers melakukan Update data Rumdis / Flat
-                </li>
-
-            </ol>
-
-                   </div>
-
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
-                ⬅️ KEMBALI
+            <button class="pangkat-card"
+                    onclick="showPage('regulerPerwiraPage')">
+                <div class="pangkat-icon">🎖️</div>
+                <h3>KENAIKAN PANGKAT REGULER PERWIRA</h3>
             </button>
 
+            <button class="pangkat-card"
+                    onclick="showPage('penghargaanPerwiraPage')">
+                <div class="pangkat-icon">🏅</div>
+                <h3>KENAIKAN PANGKAT PENGHARGAAN PERWIRA</h3>
+            </button>
+
+            <button class="pangkat-card"
+                    onclick="showPage('penghargaanBintaraTamtamaPage')">
+                <div class="pangkat-icon">🎗️</div>
+                <h3>KENAIKAN PANGKAT PENGHARGAAN BINTARA DAN TAMTAMA</h3>
+            </button>
+
+            <button class="pangkat-card"
+                    onclick="showPage('tabelKenkatPage')">
+                <div class="pangkat-icon">📊</div>
+                <h3>TABEL KENAIKAN PANGKAT</h3>
+            </button>
+
+        </div>
+
+        <div class="pangkat-back">
             <button class="btn secondary"
                     onclick="showPage('dashboardPage')">
                 ⬅️ DASHBOARD
             </button>
-
         </div>
 
-        <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
+         <div class="footer" style="text-align:center;margin-top:70px;">
+            CopyRight by @MasHar Tahun 2026
         </div>
 
     </div>
@@ -1529,282 +1205,7 @@ body {
 
 
 <!-- =========================
-     HALAMAN PEMBUATAN
-========================= -->
-<section id="buatbaru" class="page">
-    <div class="pangkat-page">
-        <div class="pangkat-header">
-            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
-            <h1 class="pangkat-title">SIP RUMDIS</h1>
-            <p class="pangkat-subtitle"></p>
-        </div>
-        
-        <div class="pangkat-menu">
-            <button class="pangkat-card" onclick="showPage('mekanismePensiunPage')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP OVB</h3>
-            </button><button class="pangkat-card" onclick="showPage('mekanismePensiunPage2')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP BARU</h3>
-            </button>
-        </div>
-
-           <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
-            
-            <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
-            </div>
-
-        </div>
-</section>
-
-
-<!-- =========================
-    SYARAT PEMBUATAN SIP OVB
-========================= -->
-<section id="mekanismePensiunPage" class="page">
-    <div class="reguler-page mekanisme-pensiun-page">
-        <div class="reguler-header">
-
-            <img src="LOGO LANMAR EMAS.png"
-                 class="reguler-logo"
-                 alt="Logo LANMAR Surabaya">
-
-            <h1 class="reguler-title">
-                
-            </h1>
-
-            
-        </div>
-
-        <div class="syarat-box">
-
-            <h2 class="syarat-heading">
-                SYARAT PEMBUATAN SIP OVB
-            </h2>
-
-            <ol class="syarat-list">
-
-                <li>
-                    FC KK Dinas
-                </li>
-
-                <li>
-                    Pas Foto 4X6 (3 lembar)
-                </li>
-
-                <li>
-                     FC KTA
-                </li>
-
-                <li>
-                    FC Surat Nikah
-                </li>
-
-                <li>
-                    FC Slip Gaji
-                </li>
-
-                <li>
-                    Materai 10.000
-                </li>
-
-                <li>
-                    FC PBB
-                </li>
-
-                <li>
-                    Surat Pernyataan OVB (Form pernyataan dari Watpers Lanmar Sby)
-
-                </li>
-
-                <li>
-                    Mencantumkan nomor HP pemohon
-                </li>
-                </ol>
-
-                <div class="download-item">
-                    <a href="SURAT PERNYATAAN.pdf"
-                        download
-                        class="download-btn">
-                      📥 DOWNLOAD SURAT PERNYATAAN
-                    </a>
-              </div>
-                 
-
-            <div class="syarat-note">
-                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
-            </div>
-
-             <a href="https://wa.me/6281231178171"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
-
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
-
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
-
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
-
-    <span>Kapten Mar Yudi Wiyanto</span>
-
-      </a>
-
-        </div>
-
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('buatbaru')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
-
-        <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
-        </div>
-
-    </div>
-</section>
-
-
-
-<!-- =========================
-    PEMBUATAN SIP BARU 
-========================= -->
-<section id="mekanismePensiunPage2" class="page">
-    <div class="reguler-page mekanisme-pensiun-page">
-        <div class="reguler-header">
-
-            <img src="LOGO LANMAR EMAS.png"
-                 class="reguler-logo"
-                 alt="Logo LANMAR Surabaya">
-
-            <h1 class="reguler-title">
-                
-            </h1>
-
-            
-        </div>
-
-        <div class="syarat-box">
-
-            <h2 class="syarat-heading">
-                SYARAT PEMBUATAN SIP BARU
-            </h2>
-
-            <ol class="syarat-list">
-
-                <li>
-                    FC KK Dinas
-                </li>
-
-                <li>
-                    Pas Foto 4X6 (3 lembar)
-                </li>
-
-                <li>
-                     FC KTA
-                </li>
-
-                <li>
-                    FC Surat Nikah
-                </li>
-
-                <li>
-                    FC Slip Gaji
-                </li>
-
-                <li>
-                    Materai 10.000
-                </li>
-
-                <li>
-                    Mencantumkan nomor HP pemohon
-                </li>
-
-            </ol>
-
-            <div class="download-item">
-                    <a href="SURAT PERNYATAAN.pdf"
-                        download
-                        class="download-btn">
-                      📥 DOWNLOAD SURAT PERNYATAAN
-                    </a>
-              </div>
-
-            <div class="syarat-note">
-                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !.
-            </div>
-
-            <a href="https://wa.me/6281231178171"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
-
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
-
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
-
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
-
-    <span>Kapten Mar Yudi Wiyanto</span>
-
-   </a>
-
-        </div>
-
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('buatbaru')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
-
-        <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
-        </div>
-
-    </div>
-</section>
-
-
-<!-- =========================
-     PERSYARATAN PERPANJANGAN SIP
+     HALAMAN KENAIKAN PANGKAT REGULER PERWIRA
 ========================= -->
 <section id="regulerPerwiraPage" class="page">
     <div class="reguler-page">
@@ -1816,102 +1217,258 @@ body {
                  alt="Logo LANMAR Surabaya">
 
             <h1 class="reguler-title">
-                
+                INFO PERS LANMAR SURABAYA
             </h1>
+
+            <p class="reguler-subtitle">
+                
+            </p>
 
         </div>
 
         <div class="syarat-box">
 
             <h2 class="syarat-heading">
-                PERSYARATAN PERPANJANGAN SIP DINAS
+                PERSYARATAN KENAIKAN PANGKAT REGULER PERWIRA
             </h2>
 
             <ol class="syarat-list">
 
                 <li>
-                    SIP Lama Di Bawa
+                    Perhitungan MDP (Masa Dinas Perwira) sudah eligible/memenuhi
+                    syarat terhitung dari pangkat pertama (Letda). Untuk MDF
+                    (Masa Dinas Fiktif/Maju/Mundur) tertera pada SKEP MDDP Letda
+                    yang bergelar Dokter/Kes paling singkat 2 tahun.
                 </li>
 
                 <li>
-                    Foto 4x6 3 Lembar
+                    Non Job/Proses Hukum tidak dapat diusulkan Kenkat.
+                    Sudah melaksanakan Dikbang atau Diksus setara dengan syarat
+                    kenaikan pangkat yang diusulkan.
                 </li>
 
                 <li>
-                    Fc KTA & Buku Nikah
+                    Nilai konduite baik dengan nilai minimal 80.
                 </li>
 
                 <li>
-                    Fc Slip Gaji
+                    Memiliki status kesehatan Gol I-III (khusus Stakes III
+                    menyertakan surat keterangan dari dokter).
                 </li>
 
                 <li>
-                    Fc KK Dinas
+                    Memiliki nilai kesamaptaan jasmani minimal 61.
                 </li>
 
                 <li>
-                    Map Plastik Biru (  Rumdis/Flat Gunung Sari )
+                    Mampu memperoleh nilai renang minimal 41 dengan jarak 50 m.
                 </li>
 
                 <li>
-                    Map Plastik Kuning ( Rumdis/Flat Karangpilang )
-                </li>
-
-                <li>
-                    Materai 10.000
-                </li>
-
-                <li>
-                    Fc PBB ( Hanya Yg Over VB )
-                </li>
-
-                <li>
-                    No Telepon.
+                    Memiliki kualifikasi penilaian kemampuan Bahasa Inggris
+                    (untuk Pama ALCPT min 46 / TOEFL min 300 &amp; Pamen
+                    ALCPT min 55 / TOEFL min 350).
                 </li>
 
             </ol>
 
             <div class="syarat-note">
-                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
+                <strong>Catatan:</strong> Pastikan seluruh persyaratan telah
+                terpenuhi sebelum pengajuan kenaikan pangkat reguler perwira.
             </div>
 
-             <a href="https://wa.me/6281231178171"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
-
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
-
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
-
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
-
-    <span>Kapten Mar Yudi Wiyanto</span>
-
-   </a>
         </div>
 
         <div class="reguler-back">
 
             <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
+                    onclick="showPage('pangkatPage')">
+                ⬅️ KEMBALI
             </button>
 
         </div>
 
         <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
+            CopyRight by @MasHar Tahun 2026
         </div>
 
     </div>
 </section>
 
 
+<section id="penghargaanPerwiraPage" class="page">
+<div class="reguler-page">
+<div class="reguler-header">
+<img src="LOGO LANMAR EMAS.png" class="reguler-logo" alt="Logo LANMAR Surabaya">
+<h1 class="reguler-title">INFO PERS LANMAR SURABAYA</h1>
+<p class="reguler-subtitle"></p>
+</div>
+<div class="syarat-box">
+<h2 class="syarat-heading">PERSYARATAN KENAIKAN PANGKAT PENGHARGAAN PERWIRA</h2>
+<ol class="syarat-list">
+
+<li>
+    Perhitungan MDP (Masa Dinas Perwira) sudah eligible/memenuhi syarat.
+</li>
+
+<li>
+    Terhitung dari pangkat pertama (Letda).
+</li>
+
+<li>
+    Sudah melaksanakan Dikbang atau Diksus yang setara dengan syarat kenaikan pangkat yang akan diusulkan.
+</li>
+
+<li>
+    Nilai kondit baik dengan nilai minimal 80.
+</li>
+
+<li>
+    Memiliki status kesehatan Gol I-III (khusus Stakes III menyertakan surat keterangan dari dokter yang menangani).
+</li>
+
+<li>
+    Memiliki nilai kesamaptaan jasmani minimal 61.
+</li>
+
+<li>
+    Mampu memperoleh nilai renang minimal 41 dengan jarak 50 meter.
+</li>
+
+<li>
+    Memiliki kualifikasi penilaian kemampuan Bahasa Inggris (untuk Pama ALCPT minimal 46 / TOEFL minimal 300 dan Pamen ALCPT minimal 55 dan TOEFL minimal 350).
+</li>
+
+<li>
+    Telah mencapai usia maksimal dinas keprajuritan dan akan diberhentikan dengan hormat paling tidak 1-3 bulan sebelum pensiun.
+</li>
+
+<li>
+    Memiliki penghargaan Bintang Jalasena Nararya / Tohar yang setingkat.
+</li>
+
+</ol>
+
+<div class="syarat-note"><strong>Catatan:</strong> Pastikan seluruh persyaratan telah terpenuhi sebelum pengajuan kenaikan pangkat penghargaan perwira.</div>
+</div>
+<div class="reguler-back">
+<button class="btn secondary" onclick="showPage('pangkatPage')">⬅️ KEMBALI</button>
+</div>
+<div class="footer" style="text-align:center;">CopyRight by @MasHar Tahun 2026</div>
+</div>
+</section>
+
+
+<!-- =========================
+     HALAMAN KENAIKAN PANGKAT PENGHARGAAN BINTARA DAN TAMTAMA
+========================= -->
+<section id="penghargaanBintaraTamtamaPage" class="page">
+    <div class="reguler-page">
+
+        <div class="reguler-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="reguler-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="reguler-title">
+                INFO PERS LANMAR SURABAYA
+            </h1>
+
+            <p class="reguler-subtitle">
+                KENAIKAN PANGKAT PENGHARGAAN BINTARA DAN TAMTAMA
+            </p>
+
+        </div>
+
+        <div class="syarat-box">
+
+            <h2 class="syarat-heading">
+                PERSYARATAN KENAIKAN PANGKAT PENGHARGAAN BINTARA DAN TAMTAMA
+            </h2>
+
+            <ol class="syarat-list">
+
+                <li>
+                    Perhitungan MDDP (Masa Dinas Dalam Pangkat) diusulkan
+                    minimal kurang 1 periode kenaikan pangkat reguler.
+                </li>
+
+                <li>
+                    Untuk UKP Har dari Peltu ke Letda, MDDP sekurang-kurangnya
+                    5 tahun.
+                </li>
+
+                <li>
+                    Untuk UKP Har dari Kopka ke Serda, MDDP sekurang-kurangnya
+                    5 tahun.
+                </li>
+
+                <li>
+                    Telah mencapai usia maksimal dinas keprajuritan dan akan
+                    diberhentikan dengan hormat paling tidak 1-3 bulan sebelum pensiun.
+                </li>
+
+                <li>
+                    Memiliki penghargaan Bintang Jalasena Nararya / Tohar
+                    yang setingkat.
+                </li>
+
+            </ol>
+
+            <div class="syarat-note">
+                <strong>Catatan:</strong> Pastikan seluruh persyaratan telah
+                terpenuhi sebelum pengajuan kenaikan pangkat penghargaan
+                Bintara dan Tamtama.
+            </div>
+
+        </div>
+
+        <div class="reguler-back">
+
+            <button class="btn secondary"
+                    onclick="showPage('pangkatPage')">
+                ⬅️ KEMBALI
+            </button>
+
+        </div>
+
+        <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+
+    </div>
+</section>
+
+
+<section id="tabelKenkatPage" class="page">
+
+    <div class="kenkat-page tabel-kenkat-page">
+
+        <div class="kenkat-header">
+            <h1>TABEL KENAIKAN PANGKAT</h1>
+            <p>INFO PERS LANMAR SURABAYA</p>
+        </div>
+
+        <div class="kenkat-image-wrapper">
+            <img src="TABEL terbaru.jpeg"
+                 alt="Tabel Kenaikan Pangkat"
+                 class="kenkat-table-image">
+        </div>
+
+        <div class="kenkat-actions">
+            <button class="btn secondary" onclick="showPage('pangkatPage')">
+                ⬅️ KEMBALI
+            </button>
+        </div>
+
+        <div class="footer">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+
+    </div>
+
+</section>
 
 <script>
 // =====================================
@@ -1957,7 +1514,7 @@ function login(event) {
     const password = document.getElementById('password').value;
     const error = document.getElementById('loginError');
 
-    if (username === 'infopers' && password === '123456') {
+    if (username === 'admin' && password === '123456') {
 
         // Hilangkan pesan error
         error.style.display = 'none';
@@ -1985,6 +1542,172 @@ function logout() {
 }
 </script>
 
+
+<section id="pensiunPage" class="page">
+    <div class="pensiunPage">
+        <div class="PensiunPage-header">
+            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
+            <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
+            <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
+        </div>
+        
+        <div class="pangkat-menu">
+            <button class="pangkat-card" onclick="showPage('persyaratanPensiunPage')">
+                <div class="pangkat-icon">📋</div>
+                <h3>PERSYARATAN PENSIUN</h3>
+            </button><button class="pangkat-card" onclick="showPage('mekanismePensiunPage')">
+                <div class="pangkat-icon">⚙️</div>
+                <h3>SISTEM DAN MEKANISME PENSIUN</h3>
+            </button>
+        </div>
+
+            <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ DASHBOARD</button>
+            </div>
+            
+            <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+            </div>
+
+        </div>
+</section>
+
+<section id="persyaratanPensiunPage" class="page">
+    <div class="persyaratanPensiunPage-page">
+        <div class="persyaratanPensiunPage-header">
+            <img src="LOGO LANMAR EMAS.png" class="reguler-logo">
+            <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
+            <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
+        </div>
+        
+        <div class="syarat-box">
+            <ol class="syarat-list">
+                <li>FOTOCOPY SURAT TELEGRAM MPP / TIDAK MPP ANGGOTA</li>
+                <li>FOTOCOPY PERINCIAN SLIP GAJI TERAKHIR</li>
+                <li>FOTOCOPY KU-1</li>
+                <li>FOTOCOPY SURAT MENIKAH</li>
+                <li>FOTOCOPY KPI</li>
+                <li>FOTOCOPY INFASING PERTAMA DAN TERAKHIR</li>
+                <li>FOTOCOPY DAFTAR RIWAYAT HIDUP</li>
+                <li>FOTOCOPY KARTU ASABRI</li>
+                <li>FOTOCOPY SURAT KETERANGAN DOMISILI</li>
+                <li>FOTOCOPY KK SIPIL</li>
+                <li>FOTOCOPY NPWP</li>
+                <li>FOTO 4X6 SUAMI ISTRI MASING-MASING 16 LEMBAR</li>
+                <li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li>
+                <li>FOTOCOPY SURAT KET KULIAH ANAK</li>
+                <li>FOTOCOPY SL JALASENA NARARYA</li>
+                <li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li>
+            </ol>
+        </div>
+        
+         <div class="reguler-back">
+
+            <button class="btn secondary"
+                    onclick="showPage('pensiunPage')">
+                ⬅️ KEMBALI
+            </button>
+
+            <button class="btn secondary"
+                    onclick="showPage('dashboardPage')">
+                ⬅️ DASHBOARD
+            </button>
+
+        </div>
+
+        <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+    </div>
+</section>
+
+<section id="mekanismePensiunPage" class="page">
+    <div class="mekanisme-pensiun-page">
+        <div class="mekanismePensiunPage-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="reguler-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="reguler-title">
+                INFO PERS LANMAR SURABAYA
+            </h1>
+
+            
+        </div>
+
+        <div class="syarat-box">
+
+            <h2 class="syarat-heading">
+                SISTEM DAN MEKANISME PENSIUN
+            </h2>
+
+            <ol class="syarat-list">
+
+                <li>
+                    Watpers Lanmar Surabaya menerima berkas usulan pensiun dari satlak.
+                </li>
+
+                <li>
+                    Watpers Lanmar Surabaya mengajukan daftar nama anggota pensiun yang mengambil dan tidak mengambil MPP ke Kormar.
+                </li>
+
+                <li>
+                    ST MPP / Tidak MPP turun ± 7 bulan setelah pengajuan.
+                </li>
+
+                <li>
+                    ST Pensiun turun ± 5 bulan setelah ST MPP / Tidak MPP turun.
+                </li>
+
+                <li>
+                    Setelah ST MPP / Tidak MPP, ST Pensiun turun dan diterima Watpers Lanmar Surabaya dari Kormar, anggota yang pensiun dibantu Bamin satlak menyiapkan syarmin pensiun dan diserahkan ke Watpers Lanmar Surabaya untuk mengajukan Skep Pensiun.
+                </li>
+
+                <li>
+                    Watpers Lanmar Surabaya menerima dan memeriksa kelengkapan syarmin pensiun selanjutnya mengirimkan berkas syarmin pensiun ke Kormar sebanyak 3 bendel.
+                </li>
+
+                <li>
+                    Setelah ± 6 bulan, Skep Pensiun turun dan diterima Watpers Lanmar Surabaya.
+                </li>
+
+                <li>
+                    Setelah Skep Pensiun turun, Watpers Lanmar Surabaya mengirimkan berkas syarmin pensiun ke kantor Asabri sebanyak 1 bendel.
+                </li>
+
+                <li>
+                    Pencairan dana pensiun dari Asabri melalui bank yang telah disetujui Asabri ± 1 bulan setengah setelah syarmin pensiun diajukan.
+                </li>
+
+            </ol>
+
+            <div class="syarat-note">
+                <strong>Catatan:</strong> Pastikan seluruh tahapan pengajuan pensiun dilaksanakan sesuai prosedur dan kelengkapan berkas agar proses penerbitan Skep Pensiun dan pencairan dana pensiun berjalan lancar.
+            </div>
+
+        </div>
+
+        <div class="reguler-back">
+
+            <button class="btn secondary"
+                    onclick="showPage('pensiunPage')">
+                ⬅️ KEMBALI
+            </button>
+
+            <button class="btn secondary"
+                    onclick="showPage('dashboardPage')">
+                ⬅️ DASHBOARD
+            </button>
+
+        </div>
+
+        <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
