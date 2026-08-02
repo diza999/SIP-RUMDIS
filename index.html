@@ -1235,15 +1235,69 @@ body {
 </style>
 
 <style>
-.kenkat-page{width:100%;max-width:1600px;margin:0 auto;padding:20px;box-sizing:border-box}
-.kenkat-header{text-align:center;margin-bottom:25px}
-.kenkat-header h1{margin:0;color:#ffd54a;font-size:clamp(25px,4vw,42px);font-weight:800}
-.kenkat-header p{color:#ddd;margin-top:8px}
-.kenkat-image-wrapper{width:100%;overflow-x:auto;background:#fff;border-radius:12px;padding:8px;box-sizing:border-box;box-shadow:0 12px 35px rgba(0,0,0,.4)}
-.kenkat-image{display:block;width:100%;min-width:900px;height:auto;margin:0 auto}
-.kenkat-actions{text-align:center;margin:25px 0}
-.kenkat-page .footer{text-align:center;padding:18px}
-@media(max-width:800px){.kenkat-image{min-width:1000px}}
+.kenkat-page{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:20px;
+    box-sizing:border-box;
+
+    min-height:100vh;      /* Tinggi minimal 1 layar */
+    display:flex;
+    flex-direction:column;
+}
+
+.kenkat-header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.kenkat-header h1{
+    margin:0;
+    color:#ffd54a;
+    font-size:clamp(25px,4vw,42px);
+    font-weight:800;
+}
+
+.kenkat-header p{
+    color:#ddd;
+    margin-top:8px;
+}
+
+.kenkat-image-wrapper{
+    width:100%;
+    overflow-x:auto;
+    background:#fff;
+    border-radius:12px;
+    padding:8px;
+    box-sizing:border-box;
+    box-shadow:0 12px 35px rgba(0,0,0,.4);
+}
+
+.kenkat-image{
+    display:block;
+    width:100%;
+    min-width:900px;
+    height:auto;
+    margin:0 auto;
+}
+
+.kenkat-actions{
+    text-align:center;
+    margin:25px 0;
+}
+
+.kenkat-page .footer{
+    text-align:center;
+    padding:18px;
+    margin-top:auto;   /* Mendorong footer ke bawah */
+}
+
+@media(max-width:800px){
+    .kenkat-image{
+        min-width:1000px;
+    }
+}
 </style>
 
 </head>
