@@ -931,29 +931,56 @@ body {
 }
 
 /* =========================================
-   TOMBOL WHATSAPP ADMIN
-   DI DALAM BACKGROUND DASHBOARD
-========================================= */
+   TOMBOL WHATSAPP ADMIN - DASHBOARD
+   ========================================= */
 
-#dashboardPage .admin-wa {
+/* =========================================
+   CONTAINER WHATSAPP DASHBOARD
+   ========================================= */
+
+#dashboardPage .admin-wa-container {
+    width: 100% !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 12px !important;
+
     position: absolute !important;
 
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    left: 0 !important;
+    bottom: 100px !important;
 
-    bottom: 65px !important;
+    z-index: 9999 !important;
+}
 
-    width: 130px !important;
+
+/* =========================================
+   TOMBOL WHATSAPP
+   ========================================= */
+
+#dashboardPage .admin-wa {
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    width: 120px !important;
     height: 42px !important;
 
     display: flex !important;
+
     align-items: center !important;
     justify-content: center !important;
 
     gap: 7px !important;
 
     background: #25D366 !important;
-    color: white !important;
+    color: #ffffff !important;
 
     border-radius: 10px !important;
 
@@ -965,77 +992,51 @@ body {
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
 
-    z-index: 9999 !important;
-
     transition: all .25s ease !important;
 }
 
+
+/* =========================================
+   HOVER NAIK KE ATAS
+   ========================================= */
+
 #dashboardPage .admin-wa:hover {
     background: #20bd5a !important;
-    transform: translateY(-2px) !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-8px) !important;
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .45) !important;
 }
+
+
+/* =========================================
+   LOGO
+   ========================================= */
 
 #dashboardPage .whatsapp-logo {
     width: 30px !important;
     height: 30px !important;
-}
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN
-========================================= */
-
-.dashboard .admin-wa {
-    position: absolute !important;
-
-    right: 25px !important;
-    bottom: 25px !important;
-
-    width: 200px !important;
-    height: 42px !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    background: #25D366 !important;
-    color: #ffffff !important;
-
-    border-radius: 10px !important;
-
-    text-decoration: none !important;
-
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
-
-    z-index: 9999 !important;
-
-    cursor: pointer !important;
-
-    transition: all .25s ease !important;
-}
-
-.dashboard .admin-wa:hover {
-    background: #20bd5a !important;
-
-    color: #ffffff !important;
-
-    transform: translateY(-2px) !important;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .45) !important;
-}
-
-.dashboard .whatsapp-logo {
-    width: 30px !important;
-    height: 30px !important;
 
     display: block !important;
-
     flex-shrink: 0 !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #dashboardPage .admin-wa-container {
+        gap: 8px !important;
+    }
+
+    #dashboardPage .admin-wa {
+        width: 125px !important;
+    }
 }
 
 #regulerPerwiraPage .syarat-box{
@@ -1054,7 +1055,7 @@ body {
     justify-content: center;
     gap: 8px;
 
-    width: 220px;
+    width: 120px;
     height: 42px;
 
     margin: 25px auto 0;
@@ -1093,46 +1094,110 @@ body {
 /* =========================================
    TOMBOL WHATSAPP ADMIN BUAT BARU
 ========================================= */
+#mekanismePensiunPage2 .admin-wa-container {
+    width: 100%;
 
-#mekanismePensiunPage2 .admin-wa{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
 
-    width: 220px;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   TOMBOL WHATSAPP
+   ========================================= */
+
+#mekanismePensiunPage2 .admin-wa {
+    position: relative !important;
+
+    left: auto !important;
+    transform: none !important;
+
+    width: 120px;
     height: 42px;
 
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
 
     background: #25D366;
-    color: #fff;
+    color: #ffffff;
+
     border-radius: 10px;
+
     text-decoration: none;
 
     font-family: "Segoe UI", Arial, sans-serif;
+
     font-size: 13px;
     font-weight: 600;
 
     box-shadow: 0 4px 12px rgba(0,0,0,.3);
+
+    transition: all .25s ease;
 }
 
-#mekanismePensiunPage2 .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+#mekanismePensiunPage2 .admin-wa:hover {
+    background: #20bd5a;
+
+    color: #ffffff;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow: 0 7px 16px rgba(0,0,0,.4);
 }
 
-#mekanismePensiunPage2 .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
+
+/* =========================================
+   LOGO WHATSAPP
+   ========================================= */
+
+#mekanismePensiunPage2 .whatsapp-logo {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
 }
 
-#mekanismePensiunPage2 .admin-wa span{
-    white-space:nowrap;
+
+/* =========================================
+   NAMA ADMIN
+   ========================================= */
+
+#mekanismePensiunPage2 .admin-wa span {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   HP / MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #mekanismePensiunPage2 .admin-wa-container {
+        gap: 10px;
+    }
+
+    #mekanismePensiunPage2 .admin-wa {
+        width: 100px;
+        height: 42px;
+
+        font-size: 12px;
+    }
+
 }
 
 
@@ -1140,46 +1205,114 @@ body {
 /* =========================================
    TOMBOL WHATSAPP ADMIN BUAT OVB
 ========================================= */
+/* =========================================
+   CONTAINER 2 TOMBOL WHATSAPP
+   ========================================= */
 
-#mekanismePensiunPage .admin-wa{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+#mekanismePensiunPage .admin-wa-container {
+    width: 100%;
+
+    display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
 
-    width: 220px;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   TOMBOL WHATSAPP
+   ========================================= */
+
+#mekanismePensiunPage .admin-wa {
+    position: relative !important;
+
+    left: auto !important;
+    transform: none !important;
+
+    width: 120px;
     height: 42px;
 
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
 
     background: #25D366;
-    color: #fff;
+    color: #ffffff;
+
     border-radius: 10px;
+
     text-decoration: none;
 
     font-family: "Segoe UI", Arial, sans-serif;
+
     font-size: 13px;
     font-weight: 600;
 
     box-shadow: 0 4px 12px rgba(0,0,0,.3);
+
+    transition: all .25s ease;
 }
 
-#mekanismePensiunPage .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+#mekanismePensiunPage .admin-wa:hover {
+    background: #20bd5a;
+
+    color: #ffffff;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow: 0 7px 16px rgba(0,0,0,.4);
 }
 
-#mekanismePensiunPage .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
+
+/* =========================================
+   LOGO WHATSAPP
+   ========================================= */
+
+#mekanismePensiunPage .whatsapp-logo {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
 }
 
-#mekanismePensiunPage .admin-wa span{
-    white-space:nowrap;
+
+/* =========================================
+   NAMA ADMIN
+   ========================================= */
+
+#mekanismePensiunPage .admin-wa span {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   HP / MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #mekanismePensiunPage .admin-wa-container {
+        gap: 10px;
+    }
+
+    #mekanismePensiunPage .admin-wa {
+        width: 100px;
+        height: 42px;
+
+        font-size: 12px;
+    }
+
 }
 
 /* =========================================
@@ -1415,24 +1548,50 @@ body {
             </button>
         </div>
 
-    <a href="https://wa.me/6281331846862"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
+    <div class="admin-wa-container">
 
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
+    <a href="https://wa.me/6282131110098"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
 
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
 
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
 
-    <span>Urwat Pers</span>
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
 
-</a>
+        </svg>
+
+        <span>Lukman</span>
+
+    </a>
+
+
+    <a href="https://wa.me/6281358766772"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
+
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+
+        </svg>
+
+        <span>Fahim</span>
+
+    </a>
+
+</div>
         
          <div class="dashboard-footer">
             CopyRight by @MasHar Tahun 2026
@@ -1648,6 +1807,10 @@ body {
                 </li>
 
                 <li>
+                    Fc Rek Listrik Pembayaran Terakhir
+                </li>
+
+                <li>
                     Materai 10.000
                 </li>
 
@@ -1672,32 +1835,67 @@ body {
                       📥 DOWNLOAD SURAT PERNYATAAN
                     </a>
               </div>
+
+              <div class="download-item">
+                    <a href="SURAT PERMOHONAN RUMDIS.pdf"
+                        download
+                        class="download-btn">
+                      📥 DOWNLOAD SURAT PERMOHONAN RUMDIS
+                    </a>
+              </div>
                  
 
             <div class="syarat-note">
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
             </div>
 
-             <a href="https://wa.me/6281331846862"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
+             
+            <div class="admin-wa-container">
 
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
+    <a href="https://wa.me/6282131110098"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
 
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
 
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
 
-    <span>Urwat Pers</span>
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
 
-      </a>
+        </svg>
 
-        </div>
+        <span>Lukman</span>
+
+    </a>
+
+
+    <a href="https://wa.me/6281358766772"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
+
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+
+        </svg>
+
+        <span>Fahim</span>
+
+    </a>
+
+</div>
+
+        
 
         <div class="reguler-back">
 
@@ -1787,29 +1985,54 @@ body {
               </div>
 
             <div class="syarat-note">
-                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !.
+                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
             </div>
 
-            <a href="https://wa.me/6281331846862"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="admin-wa">
+             
+            <div class="admin-wa-container">
 
-    <svg class="whatsapp-logo"
-         viewBox="0 0 32 32"
-         xmlns="http://www.w3.org/2000/svg">
+    <a href="https://wa.me/6282131110098"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
 
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
 
-        <path fill="#FFFFFF"
-              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-    </svg>
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
 
-    <span>Urwat Pers</span>
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
 
-   </a>
+        </svg>
 
-        </div>
+        <span>Lukman</span>
+
+    </a>
+
+
+    <a href="https://wa.me/6281358766772"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="admin-wa">
+
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+            <path fill="#FFFFFF"
+                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+
+        </svg>
+
+        <span>Fahim</span>
+
+    </a>
+
+</div>
 
         <div class="reguler-back">
 
@@ -1905,7 +2128,7 @@ body {
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
             </div>
 
-             <a href="https://wa.me/6281331846862"
+             <a href="https://wa.me/6282131110098"
    target="_blank"
    rel="noopener noreferrer"
    class="admin-wa">
@@ -1920,9 +2143,28 @@ body {
               d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
     </svg>
 
-    <span>Urwat Pers</span>
+    <span>Lukman</span>
 
-   </a>
+</a>
+
+        <a href="https://wa.me/6281358766772"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="admin-wa">
+
+    <svg class="whatsapp-logo"
+         viewBox="0 0 32 32"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+        <path fill="#FFFFFF"
+              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+    </svg>
+
+    <span>Fahim</span>
+
+</a>
         </div>
 
         <div class="reguler-back">
