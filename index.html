@@ -172,7 +172,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-image: url("backgroundterang.png");
+    background-image: url("LANMAR.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -295,6 +295,13 @@ body {
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
     gap: 18px;
+}
+
+.menu-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    margin-top: 35px;
 }
 
 .menu-card {
@@ -484,7 +491,7 @@ body {
 #regulerPerwiraPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("TOMBOL.png");
 
     background-size: cover;
     background-position: center;
@@ -495,7 +502,7 @@ body {
 #penghargaanPerwiraPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("TOMBOL.png");
 
     background-size: cover;
     background-position: center;
@@ -511,7 +518,7 @@ body {
 #PerpanjanganSipPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -526,7 +533,7 @@ body {
 #mekanismePensiunPage1{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -559,7 +566,7 @@ body {
 #persyaratanPensiunPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* Ganti dengan nama file background */
+        url("LANMAR.png");   /* Ganti dengan nama file background */
 
     background-size: cover;
     background-position: center;
@@ -570,7 +577,7 @@ body {
 #persyaratanPensiunPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* Ganti dengan nama file background */
+        url("LANMAR.png");   /* Ganti dengan nama file background */
 
     background-size: cover;
     background-position: center;
@@ -602,7 +609,7 @@ body {
 #penghargaanBintaraTamtamaPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* ganti dengan nama file background */
+        url("LANMAR.png");   /* ganti dengan nama file background */
 
     background-size: cover;
     background-position: center;
@@ -634,7 +641,7 @@ body {
 #mekanismePensiunPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -660,6 +667,28 @@ body {
 }
 
 
+/* =====================================
+   HALAMAN PERMOHONAN
+===================================== */
+#permohonan{
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    padding: 20px;
+
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("LANMAR.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+
 
 /* =====================================
    HALAMAN PEMBUATAN SIP OVB
@@ -667,7 +696,7 @@ body {
 #penbuatan{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -679,7 +708,7 @@ body {
 #mekanismePensiunPage2{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -712,7 +741,7 @@ body {
 #PerpanjanganSip{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");
+        url("LANMAR.png");
 
     background-size: cover;
     background-position: center;
@@ -744,7 +773,7 @@ body {
 #tabelKenkatPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* Ganti dengan nama file background */
+        url("LANMAR.png");   /* Ganti dengan nama file background */
 
     background-size: cover;
     background-position: center;
@@ -1534,18 +1563,28 @@ body {
 
         <div class="menu-grid">
  
-            <button class="menu-card"
+            <button class="pangkat-card"
                     onclick="showPage('pensiunPage')">
                 <div class="menu-icon">📋</div>
                 <h3>PEMBUATAN SIP DINAS</h3>
             </button>
 
-             <button class="menu-card"
+             <button class="pangkat-card"
                     onclick="showPage('regulerPerwiraPage')">
                 <div class="pangkat-icon">🎖️</div>
                 <h3>PERPANJANGAN SIP DINAS</h3>
             </button>
                         
+        </div>
+
+        <div class="menu-grid-1">
+ 
+            <button class="pangkat-card"
+                    onclick="showPage('permohonan')">
+                <div class="menu-icon">📋</div>
+                <h3>PERMOHONAN PEMBUATAN DAN PERPANJANGAN SIPRUMDIS</h3>
+            </button>
+                                    
         </div>
 
         <div style="text-align:center;">
@@ -1554,57 +1593,59 @@ body {
             </button>
         </div>
 
-    <div class="admin-wa-container">
-
-    <a href="https://wa.me/6282131110098"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="admin-wa">
-
-        <svg class="whatsapp-logo"
-             viewBox="0 0 32 32"
-             xmlns="http://www.w3.org/2000/svg">
-
-            <circle cx="16" cy="16" r="16" fill="#25D366"/>
-
-            <path fill="#FFFFFF"
-                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-
-        </svg>
-
-        <span>Lukman</span>
-
-    </a>
-
-
-    <a href="https://wa.me/6281358766772"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="admin-wa">
-
-        <svg class="whatsapp-logo"
-             viewBox="0 0 32 32"
-             xmlns="http://www.w3.org/2000/svg">
-
-            <circle cx="16" cy="16" r="16" fill="#25D366"/>
-
-            <path fill="#FFFFFF"
-                  d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
-
-        </svg>
-
-        <span>Fahim</span>
-
-    </a>
-
-</div>
-        
+            
          <div class="dashboard-footer">
             CopyRight by @MasHar Tahun 2026
         </div> 
 
     </div>
 </section>
+
+
+<!-- =========================
+     PERMOHONAN PEMBUATAN
+========================= -->
+<section id="permohonan" class="page">
+    <div class="dashboard">
+        <div class="pangkat-header">
+            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
+            <h1 class="pangkat-title">SIP RUMDIS</h1>
+            <p class="pangkat-subtitle"></p>
+        </div>
+        
+        <div class="pangkat-menu">
+            <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-BARU/'">
+            <div class="pangkat-icon">📋</div>
+            <h3>PEMBUATAN SIP BARU</h3>
+            </button>
+            <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-OVB/'">
+                <div class="pangkat-icon">📋</div>
+                <h3>PEMBUATAN SIP OVB</h3>
+            </button>
+        </div>
+
+        <div class="menu-grid-1">
+ 
+            <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-PERPANJANGAN-SIP/'">
+                <div class="menu-icon">📋</div>
+                <h3>PEMBUATAN PERPANJANGAN SIP</h3>
+            </button>
+                                    
+        </div>
+
+            <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ KEMBALI</button>
+            </div>
+            
+            <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+            </div>
+
+        </div>
+</section>
+
+
+
 
 
 <!-- =========================
