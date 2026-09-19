@@ -915,190 +915,74 @@ body {
 }
 
 
-/* =====================================
+/* =========================================================
+   CSS TAMBAHAN - RAPI & TIDAK BERTUMPUK
+   ========================================================= */
+
+
+/* =========================================================
    HALAMAN TAMPILAN HP
-===================================== */
-@media (max-width: 800px){
+   ========================================================= */
 
-    .dashboard{
-    position:relative;
-    width:100%;
-    height:150vh;
+@media (max-width: 800px) {
+
+    .login-box {
+        padding: 20px;
     }
 
-    .login-box{
-        padding:20px 20px;
+    .logo {
+        max-height: 250px;
     }
 
-    .logo{
-        max-height:250px;
+    .menu-grid-2 {
+        grid-template-columns: 1fr;
     }
 
-    .menu-grid{
-        grid-template-columns:1fr;
+    .pangkat-menu {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
-    .pangkat-menu{
-        grid-template-columns:1fr;
-        gap:12px;
+    .pangkat-card {
+        min-height: 120px;
+        padding: 15px;
     }
 
-    .pangkat-card{
-        min-height:120px;
-        padding:15px;
+    .pangkat-icon {
+        font-size: 30px;
+        margin-bottom: 8px;
     }
 
-    .pangkat-icon{
-        font-size:30px;
-        margin-bottom:8px;
+    .pangkat-card h3 {
+        font-size: 14px;
+        line-height: 1.3;
     }
 
-    .pangkat-card h3{
-        font-size:14px;
-        line-height:1.3;
+    .syarat-box {
+        padding: 20px 15px;
     }
 
-    .syarat-box{
-        padding:20px 15px;
-    }
-
-    .syarat-list li{
-        padding-left:45px;
-        font-size:14px;
+    .syarat-list li {
+        padding-left: 45px;
+        font-size: 14px;
     }
 }
 
-/* =====================================
-   HALAMAN SISTEM DAN MEKANISME PENSIUN
-===================================== */
+
+/* =========================================================
+   SISTEM DAN MEKANISME PENSIUN
+   ========================================================= */
+
 .mekanisme-list li::before {
     content: counter(syarat);
 }
 
-/* =========================================
-   TOMBOL WHATSAPP ADMIN - DASHBOARD
-   ========================================= */
 
-/* =========================================
-   CONTAINER WHATSAPP DASHBOARD
-   ========================================= */
+/* =========================================================
+   TOMBOL WHATSAPP - DASAR
+   ========================================================= */
 
-#dashboardPage .admin-wa-container {
-    width: 100% !important;
-
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-
-    gap: 12px !important;
-
-    position: absolute !important;
-
-    left: 0 !important;
-    bottom: 100px !important;
-
-    z-index: 9999 !important;
-}
-
-
-/* =========================================
-   TOMBOL WHATSAPP
-   ========================================= */
-
-#dashboardPage .admin-wa {
-    position: relative !important;
-
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-
-    transform: none !important;
-
-    width: 120px !important;
-    height: 42px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    background: #25D366 !important;
-    color: #ffffff !important;
-
-    border-radius: 10px !important;
-
-    text-decoration: none !important;
-
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
-
-    transition: all .25s ease !important;
-}
-
-
-/* =========================================
-   HOVER NAIK KE ATAS
-   ========================================= */
-
-#dashboardPage .admin-wa:hover {
-    background: #20bd5a !important;
-
-    color: #ffffff !important;
-
-    transform: translateY(-8px) !important;
-
-    box-shadow: 0 10px 22px rgba(0, 0, 0, .45) !important;
-}
-
-
-/* =========================================
-   LOGO
-   ========================================= */
-
-#dashboardPage .whatsapp-logo {
-    width: 30px !important;
-    height: 30px !important;
-
-    display: block !important;
-    flex-shrink: 0 !important;
-}
-
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 600px) {
-
-      /* Tombol WhatsApp dinaikkan */
-    #dashboardPage .admin-wa-container {
-        position: absolute !important;
-
-        bottom: 150px !important;
-
-        gap: 8px !important;
-    }
-
-    /* Tombol Logout diturunkan */
-    #dashboardPage .logout {
-        position: relative !important;
-        top: 35px !important;
-    }
-
-}
-
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN PERPANJANGAN
-========================================= */
-
-#regulerPerwiraPage .admin-wa{
-    position: relative;
+.admin-wa {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1107,12 +991,9 @@ body {
     width: 120px;
     height: 42px;
 
-    margin: 25px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
-
     background: #25D366;
-    color: #fff;
+    color: #ffffff;
+
     border-radius: 10px;
     text-decoration: none;
 
@@ -1120,31 +1001,97 @@ body {
     font-size: 13px;
     font-weight: 600;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .30);
+    transition: all .25s ease;
 }
 
-#regulerPerwiraPage .admin-wa:hover{
-    background:#20bd5a;
-    transform:translateX(-50%) translateY(-2px);
+.admin-wa:hover {
+    background: #20bd5a;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgba(0, 0, 0, .40);
 }
 
-#regulerPerwiraPage .whatsapp-logo{
-    width:24px;
-    height:24px;
-    flex-shrink:0;
+.whatsapp-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
 }
 
-#regulerPerwiraPage .admin-wa span{
-    white-space:nowrap;
+.admin-wa span {
+    white-space: nowrap;
 }
 
-#regulerPerwiraPage .syarat-box{
+
+/* =========================================================
+   WHATSAPP - DASHBOARD
+   ========================================================= */
+
+#dashboardPage .admin-wa-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+
+    z-index: 9999;
+}
+
+#dashboardPage .admin-wa {
+    position: relative;
+
+    width: 120px;
+    height: 42px;
+
+    gap: 7px;
+
+    font-size: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+}
+
+#dashboardPage .admin-wa:hover {
+    transform: translateY(-8px);
+}
+
+#dashboardPage .whatsapp-logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* =========================================================
+   WHATSAPP - PERPANJANGAN PERWIRA
+   ========================================================= */
+
+#regulerPerwiraPage .admin-wa {
+    position: relative;
+
+    margin: 25px auto 0;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#regulerPerwiraPage .admin-wa:hover {
+    transform: translateX(-50%) translateY(-2px);
+}
+
+#regulerPerwiraPage .syarat-box {
     position: relative;
 }
 
-/* =========================================
-   TOMBOL WHATSAPP ADMIN BUAT BARU
-========================================= */
+
+/* =========================================================
+   WHATSAPP - BUAT BARU
+   ========================================================= */
+
 #mekanismePensiunPage2 .admin-wa-container {
     width: 100%;
 
@@ -1153,117 +1100,24 @@ body {
     align-items: center;
 
     gap: 15px;
-
     margin-top: 25px;
 }
 
-
-/* =========================================
-   TOMBOL WHATSAPP
-   ========================================= */
-
 #mekanismePensiunPage2 .admin-wa {
-    position: relative !important;
-
-    left: auto !important;
-    transform: none !important;
+    position: relative;
 
     width: 120px;
     height: 42px;
-
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    background: #25D366;
-    color: #ffffff;
-
-    border-radius: 10px;
-
-    text-decoration: none;
-
-    font-family: "Segoe UI", Arial, sans-serif;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
-
-    transition: all .25s ease;
 }
-
-
-/* =========================================
-   HOVER
-   ========================================= */
 
 #mekanismePensiunPage2 .admin-wa:hover {
-    background: #20bd5a;
-
-    color: #ffffff;
-
-    transform: translateY(-2px) !important;
-
-    box-shadow: 0 7px 16px rgba(0,0,0,.4);
+    transform: translateY(-2px);
 }
 
 
-/* =========================================
-   LOGO WHATSAPP
-   ========================================= */
-
-#mekanismePensiunPage2 .whatsapp-logo {
-    width: 24px;
-    height: 24px;
-
-    flex-shrink: 0;
-}
-
-
-/* =========================================
-   NAMA ADMIN
-   ========================================= */
-
-#mekanismePensiunPage2 .admin-wa span {
-    white-space: nowrap;
-}
-
-
-/* =========================================
-   HP / MOBILE
-   ========================================= */
-
-@media (max-width: 600px) {
-
-    #mekanismePensiunPage2 .admin-wa-container {
-        gap: 10px;
-    }
-
-    #mekanismePensiunPage2 .admin-wa {
-        width: 100px;
-        height: 42px;
-
-        font-size: 12px;
-    }
-
-    .dashboard{
-        background-size:auto 100vh;
-        background-position:center top;
-    }
-
-}
-
-
-
-/* =========================================
-   TOMBOL WHATSAPP ADMIN BUAT OVB
-========================================= */
-/* =========================================
-   CONTAINER 2 TOMBOL WHATSAPP
-   ========================================= */
+/* =========================================================
+   WHATSAPP - OVB
+   ========================================================= */
 
 #mekanismePensiunPage .admin-wa-container {
     width: 100%;
@@ -1273,91 +1127,138 @@ body {
     align-items: center;
 
     gap: 15px;
-
     margin-top: 25px;
 }
 
-
-/* =========================================
-   TOMBOL WHATSAPP
-   ========================================= */
-
 #mekanismePensiunPage .admin-wa {
-    position: relative !important;
-
-    left: auto !important;
-    transform: none !important;
+    position: relative;
 
     width: 120px;
     height: 42px;
+}
 
-    display: inline-flex;
+#mekanismePensiunPage .admin-wa:hover {
+    transform: translateY(-2px);
+}
 
+
+/* =========================================================
+   TOMBOL DOWNLOAD FILE
+   ========================================================= */
+
+.download-item {
+    list-style: none !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin: 18px 0;
+    padding-left: 0 !important;
+}
+
+
+/* Lingkaran kuning - disembunyikan */
+.download-badge {
+    display: none;
+}
+
+
+/* Hilangkan pseudo-element bawaan */
+.download-item::before,
+.download-item::after {
+    display: none !important;
+    content: none !important;
+}
+
+
+/* Tombol download */
+.download-btn {
+    display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 280px;
+    height: 48px;
+
     gap: 8px;
+    padding: 0 20px;
 
-    background: #25D366;
-    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #FFD700,
+        #D4AF37,
+        #B8860B
+    );
 
-    border-radius: 10px;
-
-    text-decoration: none;
-
-    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff !important;
+    text-decoration: none !important;
 
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    border-radius: 25px;
+    border: 2px solid #FFD700;
+
+    text-align: center;
 
     transition: all .25s ease;
 }
 
+.download-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #FFE766,
+        #FFD700,
+        #DAA520
+    );
 
-/* =========================================
-   HOVER
-   ========================================= */
+    color: #111111 !important;
 
-#mekanismePensiunPage .admin-wa:hover {
-    background: #20bd5a;
+    transform: translateY(-3px) scale(1.05);
 
-    color: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 215, 0, .75);
+}
 
-    transform: translateY(-2px) !important;
-
-    box-shadow: 0 7px 16px rgba(0,0,0,.4);
+.download-btn span {
+    font-size: 22px;
 }
 
 
-/* =========================================
-   LOGO WHATSAPP
-   ========================================= */
-
-#mekanismePensiunPage .whatsapp-logo {
-    width: 24px;
-    height: 24px;
-
-    flex-shrink: 0;
-}
-
-
-/* =========================================
-   NAMA ADMIN
-   ========================================= */
-
-#mekanismePensiunPage .admin-wa span {
-    white-space: nowrap;
-}
-
-
-/* =========================================
-   HP / MOBILE
-   ========================================= */
+/* =========================================================
+   PENGATURAN MOBILE
+   Semua aturan max-width: 600px digabung di sini
+   ========================================================= */
 
 @media (max-width: 600px) {
 
+    /* Dashboard */
+    #dashboardPage .admin-wa-container {
+        bottom: 150px;
+        gap: 8px;
+    }
+
+    #dashboardPage .logout {
+        position: relative;
+        top: 35px;
+    }
+
+
+    /* Buat Baru */
+    #mekanismePensiunPage2 .admin-wa-container {
+        gap: 10px;
+    }
+
+    #mekanismePensiunPage2 .admin-wa {
+        width: 100px;
+        height: 42px;
+        font-size: 12px;
+    }
+
+
+    /* OVB */
     #mekanismePensiunPage .admin-wa-container {
         gap: 10px;
     }
@@ -1365,89 +1266,15 @@ body {
     #mekanismePensiunPage .admin-wa {
         width: 100px;
         height: 42px;
-
         font-size: 12px;
     }
 
-}
 
-/* =========================================
-   TOMBOL DOWNLOAD FILE
-========================================= */
-.download-item{
-    list-style:none;
-    display:flex;
-    justify-content:center;   /* tombol di tengah */
-    align-items:center;
-    position:relative;
-    margin:18px 0;
-}
-
-/* Lingkaran kuning kosong */
-.download-badge{
-    position:absolute;
-    left:18px;
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    background:#FFD54A;
-}
-
-/* Tombol */
-.download-btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;   /* Tengah horizontal */
-
-    width:280px;              /* Lebar tombol */
-    height:48px;              /* Tinggi tombol */
-
-    gap:8px;
-
-    padding:0 20px;
-
-    background:linear-gradient(135deg,#FFD700,#D4AF37,#B8860B);
-
-    color:#fff !important;
-    text-decoration:none !important;
-
-    font-size:13px;
-    font-weight:700;
-
-    border-radius:25px;
-    border:2px solid #FFD700;
-
-    text-align:center;        /* Teks rata tengah */
-}
-
-.download-btn:hover{
-    background:linear-gradient(135deg,#FFE766,#FFD700,#DAA520);
-    color:#111 !important;
-    transform:translateY(-3px) scale(1.05);
-    box-shadow:0 0 25px rgba(255,215,0,.75);
-}
-
-.download-btn span{
-    font-size:22px;
-}
-
-/* Hilangkan badge kuning pada item download */
-.download-item::before{
-    display:none !important;
-    content:none !important;
-}
-
-.download-item::after{
-    display:none !important;
-    content:none !important;
-}
-
-.download-item{
-    list-style:none !important;
-    padding-left:0 !important;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    /* Background dashboard */
+    .dashboard {
+        background-size: auto 100vh;
+        background-position: center top;
+    }
 }
 
 
