@@ -229,19 +229,20 @@ body {
 .dashboard{
     position:relative;
     width:100%;
-    height:100vh;
+    min-height:100vh;
     box-sizing:border-box;
-    padding: 20px;
+    padding:20px;
 
     background:
         linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
         url("LANMAR.png");
 
     background-size:cover;
-    background-position:center;
+    background-position:center top;
     background-repeat:no-repeat;
 
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 
 /* Khusus Dashboard */
@@ -296,6 +297,15 @@ body {
     justify-content: center;
     gap: 18px;
 }
+
+.menu-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    margin-top: 35px;
+    gap: 18px;
+}
+
 
 .menu-grid-1 {
     display: grid;
@@ -407,7 +417,7 @@ body {
 }
 
 .pangkat-card {
-    min-height: 130px;
+    min-height: 100px;
     padding: 15px;
     border-radius: 18px;
     border: 1px solid rgba(255, 193, 7, .25);
@@ -910,6 +920,12 @@ body {
 ===================================== */
 @media (max-width: 800px){
 
+    .dashboard{
+    position:relative;
+    width:100%;
+    height:150vh;
+    }
+
     .login-box{
         padding:20px 20px;
     }
@@ -1231,6 +1247,11 @@ body {
         height: 42px;
 
         font-size: 12px;
+    }
+
+    .dashboard{
+        background-size:auto 100vh;
+        background-position:center top;
     }
 
 }
@@ -1561,14 +1582,14 @@ body {
 
         </div>
 
-        <div class="menu-grid">
+        <div class="menu-grid-2">
  
             <button class="pangkat-card"
                     onclick="showPage('pensiunPage')">
                 <div class="menu-icon">📋</div>
                 <h3>PEMBUATAN SIP DINAS</h3>
             </button>
-
+            
              <button class="pangkat-card"
                     onclick="showPage('regulerPerwiraPage')">
                 <div class="pangkat-icon">🎖️</div>
