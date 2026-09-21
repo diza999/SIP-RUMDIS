@@ -299,8 +299,9 @@ body {
 }
 
 .menu-grid-2 {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 250px);
     justify-content: center;
     margin-top: 35px;
     gap: 18px;
@@ -311,7 +312,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 300px);
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .menu-card {
@@ -645,6 +646,123 @@ body {
 }
 
 /* =====================================
+   HALAMAN MEKANISME over vb
+===================================== */
+
+#over_vb{
+    width:100%;
+    max-width:100%;
+    padding:35px;
+    border-radius:22px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+
+#over_vb .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+
+
+#persyaratan_over_vb{
+    width:100%;
+    max-width:100%;
+    padding:35px;
+    border-radius:22px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+
+#persyaratan_over_vb .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+
+/* =====================================
+   HALAMAN PERPANJANGAN SIP
+===================================== */
+
+#perpanjangan_sip{
+    width:100%;
+    max-width:100%;
+    padding:35px;
+    border-radius:22px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+
+#perpanjangan_sip .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+
+#persyaratan_perpanjangan_sip{
+    width:100%;
+    max-width:100%;
+    padding:35px;
+    border-radius:22px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+
+#persyaratan_perpanjangan_sip .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+
+/* =====================================
    HALAMAN MEKANISME PENSIUN
 ===================================== */
 
@@ -676,6 +794,49 @@ body {
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
+
+/* =====================================
+   HALAMAN PERSYARATAN
+===================================== */
+#persyaratan{
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    padding: 20px;
+
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("LANMAR.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+
+/* =====================================
+   HALAMAN MEKANISME
+===================================== */
+#mekanisme{
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    padding: 20px;
+
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("LANMAR.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
 
 /* =====================================
    HALAMAN PERMOHONAN
@@ -931,11 +1092,20 @@ body {
     }
 
     .logo {
-        max-height: 250px;
+        max-height: 100px;
+    }
+
+    .login-logo {
+        max-height: 100px;
+    }
+
+    .dashboard-logo {
+        max-height: 100px;
     }
 
     .menu-grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 300px);
+        gap: 20px;
     }
 
     .pangkat-menu {
@@ -1246,6 +1416,69 @@ body {
     }
 
 
+    
+    /* OVB */
+    #over_vb .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #over_vb .admin-wa {
+        width: 100px;
+        height: 42px;
+        font-size: 12px;        
+    }
+
+
+     #persyaratan_over_vb .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #persyaratan_over_vb .admin-wa {
+        width: 100px;
+        height: 42px;
+        font-size: 12px;        
+    }
+
+
+    /* PERPANJANGAN SIP */
+    #perpanjangan_sip .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #perpanjangan_sip .admin-wa {
+        width: 100px;
+        height: 42px;
+        font-size: 12px;
+        
+    } 
+
+
+     /* PERPANJANGAN SIP */
+    #persyaratan_perpanjangan_sip .admin-wa-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #persyaratan_perpanjangan_sip .admin-wa {
+        width: 100px;
+        height: 42px;
+        font-size: 12px;
+        
+    }
+
+
+
     /* Buat Baru */
     #mekanismePensiunPage2 .admin-wa-container {
         gap: 10px;
@@ -1414,26 +1647,34 @@ body {
             <button class="pangkat-card"
                     onclick="showPage('pensiunPage')">
                 <div class="menu-icon">📋</div>
-                <h3>PEMBUATAN SIP DINAS</h3>
+                <h3>INFORMASI</h3>
             </button>
             
              <button class="pangkat-card"
-                    onclick="showPage('regulerPerwiraPage')">
-                <div class="pangkat-icon">🎖️</div>
-                <h3>PERPANJANGAN SIP DINAS</h3>
+                    onclick="showPage('persyaratan')">
+                <div class="pangkat-icon">📋</div>
+                <h3>PERSYARATAN</h3>
             </button>
                         
         </div>
 
-        <div class="menu-grid-1">
+        <div class="menu-grid-2">
  
             <button class="pangkat-card"
-                    onclick="showPage('permohonan')">
+                    onclick="showPage('mekanisme')">
                 <div class="menu-icon">📋</div>
-                <h3>PERMOHONAN PEMBUATAN DAN PERPANJANGAN SIPRUMDIS</h3>
+                <h3>MEKANISME</h3>
             </button>
-                                    
+            
+             <button class="pangkat-card"
+                    onclick="showPage('permohonan')">
+                <div class="pangkat-icon">📋</div>
+                <h3>PEMBUATAN SIP</h3>
+            </button>
+                        
         </div>
+
+        
 
         <div style="text-align:center;">
             <button class="btn logout" onclick="logout()">
@@ -1455,32 +1696,30 @@ body {
 ========================= -->
 <section id="permohonan" class="page">
     <div class="dashboard">
-        <div class="pangkat-header">
-            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
-            <h1 class="pangkat-title">SIP RUMDIS</h1>
-            <p class="pangkat-subtitle"></p>
+        <div class="dashboard-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="dashboard-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="dashboard-title">
+                PEMBUATAN SIP
+            </h1>
+
         </div>
         
-        <div class="pangkat-menu">
-            <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-BARU/'">
+        <div class="menu-grid-2">
+             <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-PERPANJANGAN-SIP/'">
             <div class="pangkat-icon">📋</div>
-            <h3>PEMBUATAN SIP BARU</h3>
+            <h3>PERPANJANGAN SIP</h3>
             </button>
             <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-OVB/'">
                 <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP OVB</h3>
+                <h3>OVER VB</h3>
             </button>
         </div>
 
-        <div class="menu-grid-1">
- 
-            <button class="pangkat-card" onclick="window.location.href='https://diza999.github.io/PERMOHONAN-PERPANJANGAN-SIP/'">
-                <div class="menu-icon">📋</div>
-                <h3>PEMBUATAN PERPANJANGAN SIP</h3>
-            </button>
-                                    
-        </div>
-
+        
             <div class="pangkat-back">
                 <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ KEMBALI</button>
             </div>
@@ -1495,25 +1734,72 @@ body {
 
 
 
-
 <!-- =========================
-     PERSYARATAN PERPANJANGAN SIP
+     HALAMAN PERSYARATAN
 ========================= -->
-<section id="pensiunPage" class="page">
+<section id="persyaratan" class="page">
     <div class="dashboard">
-        <div class="pangkat-header">
-            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
-            <h1 class="pangkat-title">SIP RUMDIS</h1>
-            <p class="pangkat-subtitle"></p>
+
+        <div class="dashboard-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="dashboard-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="dashboard-title">
+                PERSYARATAN
+            </h1>
+
         </div>
         
-        <div class="pangkat-menu">
-            <button class="pangkat-card" onclick="showPage('mekanismePensiunPage1')">
+        <div class="menu-grid-2">
+            <button class="pangkat-card" onclick="showPage('persyaratan_perpanjangan_sip')">
                 <div class="pangkat-icon">📋</div>
-                <h3>PROSEDUR PEMBUATAN SIP DINAS</h3>
-            </button><button class="pangkat-card" onclick="showPage('buatbaru')">
+                <h3>PERPANJANGAN SIP</h3>
+            </button><button class="pangkat-card" onclick="showPage('persyaratan_over_vb')">
                 <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP DINAS</h3>
+                <h3>OVER VB</h3>
+            </button>
+        </div>
+
+            <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ DASHBOARD</button>
+            </div>
+            
+            <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+            </div>
+
+        </div>
+</section>
+
+
+
+<!-- =========================
+     HALAMAN MEKANISME
+========================= -->
+<section id="mekanisme" class="page">
+    <div class="dashboard">
+
+        <div class="dashboard-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="dashboard-logo"
+                 alt="Logo LANMAR Surabaya">
+
+            <h1 class="dashboard-title">
+                MEKANISME
+            </h1>
+
+        </div>
+        
+        <div class="menu-grid-2">
+            <button class="pangkat-card" onclick="showPage('perpanjangan_sip')">
+                <div class="pangkat-icon">📋</div>
+                <h3>PERPANJANGAN SIP</h3>
+            </button><button class="pangkat-card" onclick="showPage('over_vb')">
+                <div class="pangkat-icon">📋</div>
+                <h3>OVER VB</h3>
             </button>
         </div>
 
@@ -1531,134 +1817,11 @@ body {
 
 
 
-<!-- =========================
-     PPOSEDUR PEMBUATAN SIP DINAS
-========================= -->
-<section id="mekanismePensiunPage1" class="page">
-    <div class="reguler-page mekanisme-pensiun-page1">
-        <div class="reguler-header">
-
-            <img src="LOGO LANMAR EMAS.png"
-                 class="reguler-logo"
-                 alt="Logo LANMAR Surabaya">
-
-            <h1 class="reguler-title">
-                
-            </h1>
-
-            
-        </div>
-
-        <div class="syarat-box">
-
-            <h2 class="syarat-heading">
-                PPOSEDUR PEMBUATAN SIP DINAS
-            </h2>
-
-            <ol class="syarat-list">
-
-                <li>
-                    Watpers LANMAR Surabaya menerima syarmin dari pemohon
-
-                </li>
-
-                <li>
-                    Watpers LANMAR Surabaya memproses pembuatan SIP Baru sesuai kebutuhan pemohon (Rumdis/Flat)
-                </li>
-
-                <li>
-                    Setelah SIP diproses kemudian diajukan TTD Paspers
-                </li>
-
-                <li>
-                    Setelah TTD Paspers, Stempel SIP oleh set LANMAR Surabaya
-                </li>
-
-                <li>
-                    SIP untuk Flat berwarna Kuning, Rumdis berwarna Biru
-                </li>
-
-                <li>
-                   Perpanjangan SIP Flat 1 tahun sekali, Rumdis 3 tahun sekali setelah SIP selesai, diserahkan/diambil oleh pemohon
-                </li>
-
-                <li>
-                    Watpers melakukan Update data Rumdis / Flat
-                </li>
-
-            </ol>
-
-                   </div>
-
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
-
-        <div class="footer" style="text-align:center;">
-            CopyRight by @MasHar Tahun 2026
-        </div>
-
-    </div>
-</section>
-
 
 <!-- =========================
-     HALAMAN PEMBUATAN
+    MEKANISME PERPANJANGAN OVB
 ========================= -->
-<section id="buatbaru" class="page">
-    <div class="dashboard">
-        <div class="pangkat-header">
-            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
-            <h1 class="pangkat-title">SIP RUMDIS</h1>
-            <p class="pangkat-subtitle"></p>
-        </div>
-        
-        <div class="pangkat-menu">
-            <button class="pangkat-card" onclick="showPage('mekanismePensiunPage')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP OVB</h3>
-            </button><button class="pangkat-card" onclick="showPage('mekanismePensiunPage2')">
-                <div class="pangkat-icon">📋</div>
-                <h3>PEMBUATAN SIP BARU</h3>
-            </button>
-        </div>
-
-           <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
-            
-            <div class="footer" style="text-align:center;">
-            CopyRight by @MasHar Tahun 2026
-            </div>
-
-        </div>
-</section>
-
-
-<!-- =========================
-    SYARAT PEMBUATAN SIP OVB
-========================= -->
-<section id="mekanismePensiunPage" class="page">
+<section id="over_vb" class="page">
     <div class="reguler-page mekanisme-pensiun-page">
         <div class="reguler-header">
 
@@ -1676,33 +1839,49 @@ body {
         <div class="syarat-box">
 
             <h2 class="syarat-heading">
-                SYARAT PEMBUATAN SIP OVB
+                MEKNISME OVER VB
             </h2>
 
             <ol class="syarat-list">
 
                 <li>
-                    FC KK Dinas
+                    Pilih Tombol Pembuatan SIP
                 </li>
 
                 <li>
-                    Pas Foto 4X6 (3 lembar)
+                    Pilih Tombol Over VB
                 </li>
 
                 <li>
-                     FC KTA
+                    Isi data Pemohon
                 </li>
 
                 <li>
-                    FC Surat Nikah
+                    Lengkapi Dokumen Persyaratan Yang Harus Diupload
                 </li>
 
                 <li>
-                    FC Slip Gaji
+                    KK Dinas
                 </li>
 
                 <li>
-                    Fc Rek Listrik Pembayaran Terakhir
+                    Pas Foto Berpakaian PDH
+                </li>
+
+                <li>
+                    KTA
+                </li>
+
+                <li>
+                    Surat Nikah
+                </li>
+
+                <li>
+                    Slip Gaji
+                </li>
+
+                <li>
+                    Rek Listrik Pembayaran Terakhir
                 </li>
 
                 <li>
@@ -1710,17 +1889,14 @@ body {
                 </li>
 
                 <li>
-                    FC PBB
+                    PBB
                 </li>
 
                 <li>
-                    Surat Pernyataan OVB (Form pernyataan dari Watpers Lanmar Sby)
+                    Surat Pernyataan OVB (Form pernyataan bisa didownload dibawah)
 
                 </li>
 
-                <li>
-                    Mencantumkan nomor HP pemohon
-                </li>
                 </ol>
 
                 <div class="download-item">
@@ -1792,19 +1968,9 @@ body {
 
         
 
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('buatbaru')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
+        <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('mekanisme')">⬅️ KEMBALI</button>
+            </div>
 
         <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
@@ -1816,9 +1982,144 @@ body {
 
 
 <!-- =========================
-    PEMBUATAN SIP BARU 
+     HALAMAN PERPANJANGAN SIP
 ========================= -->
-<section id="mekanismePensiunPage2" class="page">
+<section id="perpanjangan_sip" class="page">
+    <div class="reguler-page">
+
+        <div class="reguler-header">
+
+            <img src="LOGO LANMAR EMAS.png"
+                 class="reguler-logo"
+                 alt="Logo LANMAR Surabaya">
+
+        </div>
+
+        <div class="syarat-box">
+
+            <h2 class="syarat-heading">
+                MEKANISME PERPANJANGAN SIP
+            </h2>
+
+            <ol class="syarat-list">
+
+                <li>
+                    Pilih tombol Pembuatan SIP
+                </li>
+
+                <li>
+                    Pilih tombol Perpanjangan SIP
+                </li>
+
+                <li>
+                    Isi Data Pemohon
+                </li>
+
+                <li>
+                    Lengkapi Dokumen Persyaratan Yang Harus Diupload
+                </li>
+
+                <li>
+                    SIP Lama
+                </li>
+
+                <li>
+                    Pas Foto Berpakaian PDH
+                </li>
+
+                <li>
+                    KTA 
+                </li>
+
+                <li>
+                    Surat Nikah
+                </li>
+
+                <li>
+                    Slip Gaji
+                </li>
+
+                <li>
+                    KK Dinas
+                </li>
+
+                <li>
+                    Materai 10.000
+                </li>
+
+                <li>
+                    No Telepon.
+                </li>
+
+            </ol>
+
+            <div class="syarat-note">
+                <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
+            </div>
+
+
+            <div class="admin-wa-container">
+
+             <a href="https://wa.me/6282131110098"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="admin-wa">
+
+    <svg class="whatsapp-logo"
+         viewBox="0 0 32 32"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+        <path fill="#FFFFFF"
+              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+    </svg>
+
+    <span>Lukman</span>
+
+</a>
+
+        <a href="https://wa.me/6281358766772"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="admin-wa">
+
+    <svg class="whatsapp-logo"
+         viewBox="0 0 32 32"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+        <path fill="#FFFFFF"
+              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+    </svg>
+
+    <span>Fahim</span>
+
+     </a>
+
+     </div>
+        </div>
+
+        <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('mekanisme')">⬅️ KEMBALI</button>
+            </div>
+
+        <div class="footer" style="text-align:center;">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+<!-- =========================
+    PERSYARATAN PERPANJANGAN OVB
+========================= -->
+<section id="persyaratan_over_vb" class="page">
     <div class="reguler-page mekanisme-pensiun-page">
         <div class="reguler-header">
 
@@ -1836,29 +2137,34 @@ body {
         <div class="syarat-box">
 
             <h2 class="syarat-heading">
-                SYARAT PEMBUATAN SIP BARU
+                PERSYARATAN OVER VB
             </h2>
 
             <ol class="syarat-list">
 
+                
                 <li>
-                    FC KK Dinas
+                    KK Dinas
                 </li>
 
                 <li>
-                    Pas Foto 4X6 (3 lembar)
+                    Pas Foto Berpakaian PDH
                 </li>
 
                 <li>
-                     FC KTA
+                    KTA
                 </li>
 
                 <li>
-                    FC Surat Nikah
+                    Surat Nikah
                 </li>
 
                 <li>
-                    FC Slip Gaji
+                    Slip Gaji
+                </li>
+
+                <li>
+                    Rek Listrik Pembayaran Terakhir
                 </li>
 
                 <li>
@@ -1866,18 +2172,32 @@ body {
                 </li>
 
                 <li>
-                    Mencantumkan nomor HP pemohon
+                    PBB
                 </li>
 
-            </ol>
+                <li>
+                    Surat Pernyataan OVB (Form pernyataan bisa didownload dibawah)
 
-            <div class="download-item">
+                </li>
+
+                </ol>
+
+                <div class="download-item">
                     <a href="SURAT PERNYATAAN.pdf"
                         download
                         class="download-btn">
                       📥 DOWNLOAD SURAT PERNYATAAN
                     </a>
               </div>
+
+              <div class="download-item">
+                    <a href="SURAT PERMOHONAN RUMDIS.pdf"
+                        download
+                        class="download-btn">
+                      📥 DOWNLOAD SURAT PERMOHONAN RUMDIS
+                    </a>
+              </div>
+                 
 
             <div class="syarat-note">
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
@@ -1929,19 +2249,11 @@ body {
 
 </div>
 
-        <div class="reguler-back">
+        
 
-            <button class="btn secondary"
-                    onclick="showPage('buatbaru')">
-                ⬅️ KEMBALI
-            </button>
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
+        <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('persyaratan')">⬅️ KEMBALI</button>
+            </div>
 
         <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
@@ -1951,10 +2263,12 @@ body {
 </section>
 
 
+
+
 <!-- =========================
-     PERSYARATAN PERPANJANGAN SIP
+     HALAMAN PERPANJANGAN SIP
 ========================= -->
-<section id="regulerPerwiraPage" class="page">
+<section id="persyaratan_perpanjangan_sip" class="page">
     <div class="reguler-page">
 
         <div class="reguler-header">
@@ -1963,54 +2277,42 @@ body {
                  class="reguler-logo"
                  alt="Logo LANMAR Surabaya">
 
-            <h1 class="reguler-title">
-                
-            </h1>
-
         </div>
 
         <div class="syarat-box">
 
             <h2 class="syarat-heading">
-                PERSYARATAN PERPANJANGAN SIP DINAS
+                PERSYARATAN PERPANJANGAN SIP
             </h2>
 
             <ol class="syarat-list">
 
                 <li>
-                    SIP Lama Di Bawa
+                    SIP Lama
                 </li>
 
                 <li>
-                    Foto 4x6 3 Lembar
+                    Pas Foto Berpakaian PDH
                 </li>
 
                 <li>
-                    Fc KTA & Buku Nikah
+                    KTA 
                 </li>
 
                 <li>
-                    Fc Slip Gaji
+                    Surat Nikah
                 </li>
 
                 <li>
-                    Fc KK Dinas
+                    Slip Gaji
                 </li>
 
                 <li>
-                    Map Plastik Biru (  Rumdis/Flat Gunung Sari )
-                </li>
-
-                <li>
-                    Map Plastik Kuning ( Rumdis/Flat Karangpilang )
+                    KK Dinas
                 </li>
 
                 <li>
                     Materai 10.000
-                </li>
-
-                <li>
-                    Fc PBB ( Hanya Yg Over VB )
                 </li>
 
                 <li>
@@ -2022,6 +2324,9 @@ body {
             <div class="syarat-note">
                 <strong>Catatan:</strong> Pastikan seluruh Persyaratan diatas sudah lengkap. Jika ada yang kurang jelas bisa hubungi nomor whatsapp dibawah !
             </div>
+
+
+            <div class="admin-wa-container">
 
              <a href="https://wa.me/6282131110098"
    target="_blank"
@@ -2059,21 +2364,19 @@ body {
 
     <span>Fahim</span>
 
-</a>
+     </a>
+
+     </div>
         </div>
 
-        <div class="reguler-back">
-
-            <button class="btn secondary"
-                    onclick="showPage('dashboardPage')">
-                ⬅️ DASHBOARD
-            </button>
-
-        </div>
+        <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('persyaratan')">⬅️ KEMBALI</button>
+            </div>
 
         <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
         </div>
+
 
     </div>
 </section>
