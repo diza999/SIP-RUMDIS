@@ -1511,6 +1511,154 @@ body {
 }
 
 
+
+/* =====================================
+   TAMBAHAN - HALAMAN INFORMASI
+   Tidak mengubah CSS halaman lama
+===================================== */
+#informasiPage{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    padding:30px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),
+        url("LANMAR.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    overflow-y:auto;
+}
+
+.informasi-box{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    padding:30px;
+    border-radius:22px;
+    background:rgba(15,15,15,.82);
+    border:1px solid rgba(255,193,7,.28);
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+.informasi-logo{
+    display:block;
+    width:min(250px,65vw);
+    height:160px;
+    object-fit:contain;
+    margin:0 auto 5px;
+}
+
+.informasi-title{
+    text-align:center;
+    color:#ffd54a;
+    font-size:clamp(24px,4vw,38px);
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.informasi-subtitle{
+    text-align:center;
+    color:#f5b505;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.informasi-content{
+    min-height:180px;
+    padding:22px;
+    border-radius:15px;
+    background:rgba(0,0,0,.48);
+    border:1px solid rgba(255,193,7,.18);
+    color:#fff;
+    font-size:16px;
+    line-height:1.8;
+    white-space:pre-wrap;
+    overflow-wrap:anywhere;
+}
+
+.informasi-admin{
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,193,7,.18);
+}
+
+.informasi-admin h3{
+    color:#ffd54a;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.informasi-admin input,
+.informasi-admin textarea{
+    width:100%;
+    border:1px solid #555;
+    border-radius:10px;
+    outline:none;
+    background:#101010;
+    color:#fff;
+    padding:12px 14px;
+    font-size:15px;
+}
+
+.informasi-admin textarea{
+    min-height:260px;
+    resize:vertical;
+    line-height:1.6;
+}
+
+.informasi-admin input:focus,
+.informasi-admin textarea:focus{
+    border-color:#ffc107;
+    box-shadow:0 0 0 3px rgba(255,193,7,.12);
+}
+
+.informasi-error{
+    display:none;
+    margin-top:10px;
+    color:#ff8a8a;
+    text-align:center;
+}
+
+.informasi-status{
+    min-height:22px;
+    margin-top:12px;
+    color:#ffd54a;
+    text-align:center;
+    font-size:14px;
+}
+
+.informasi-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    margin-top:10px;
+}
+
+.informasi-buttons .btn{
+    margin-top:12px;
+}
+
+#informasiEditorArea,
+#informasiPasswordArea{
+    display:none;
+}
+
+.informasi-back{
+    text-align:center;
+    margin-top:18px;
+}
+
+@media(max-width:600px){
+    .informasi-box{padding:18px;}
+    .informasi-content{font-size:14px;}
+    .informasi-admin textarea{min-height:220px;}
+}
+
 </style>
 
 <style>
@@ -1645,8 +1793,8 @@ body {
         <div class="menu-grid-2">
  
             <button class="pangkat-card"
-                    onclick="showPage('pensiunPage')">
-                <div class="menu-icon">📋</div>
+                    onclick="showPage('informasiPage')">
+                <div class="menu-icon">📢</div>
                 <h3>INFORMASI</h3>
             </button>
             
@@ -2383,7 +2531,316 @@ body {
 
 
 
+
+<!-- =====================================
+     HALAMAN INFORMASI
+     TAMBAHAN - TIDAK MENGUBAH HALAMAN LAMA
+===================================== -->
+<section id="informasiPage" class="page">
+    <div class="informasi-box">
+
+        <img src="LOGO LANMAR EMAS.png"
+             class="informasi-logo"
+             alt="Logo LANMAR Surabaya">
+
+        <h1 class="informasi-title">INFORMASI</h1>
+        <p class="informasi-subtitle">
+            Informasi SIP RUMDIS
+        </p>
+
+        <div id="informasiContent" class="informasi-content">
+            Memuat informasi...
+        </div>
+
+        <div class="informasi-admin">
+
+            <h3>🔐 ADMIN INFORMASI</h3>
+
+            <div id="informasiPasswordArea">
+                <input type="password"
+                       id="informasiPassword"
+                       placeholder="Masukkan password admin"
+                       autocomplete="off">
+
+                <div id="informasiPasswordError"
+                     class="informasi-error">
+                    Password admin salah.
+                </div>
+
+                <div class="informasi-buttons">
+                    <button class="btn"
+                            onclick="verifikasiAdminInformasi()">
+                        🔓 VERIFIKASI
+                    </button>
+
+                    <button class="btn secondary"
+                            onclick="tutupLoginInformasi()">
+                        BATAL
+                    </button>
+                </div>
+            </div>
+
+            <div class="informasi-buttons" id="informasiAdminButtonArea">
+                <button class="btn"
+                        onclick="bukaLoginInformasi()">
+                    ✏️ ADMIN / EDIT INFORMASI
+                </button>
+            </div>
+
+            <div id="informasiEditorArea">
+                <textarea id="informasiEditor"
+                          placeholder="Tulis informasi di sini..."></textarea>
+
+                <div class="informasi-buttons">
+                    <button class="btn"
+                            onclick="simpanInformasi()">
+                        💾 SIMPAN INFORMASI
+                    </button>
+
+                    <button class="btn secondary"
+                            onclick="batalEditInformasi()">
+                        BATAL
+                    </button>
+                </div>
+            </div>
+
+            <div id="informasiStatus" class="informasi-status"></div>
+        </div>
+
+        <div class="informasi-back">
+            <button class="btn secondary"
+                    onclick="showPage('dashboardPage')">
+                ↩ KEMBALI KE DASHBOARD
+            </button>
+        </div>
+
+        <div class="dashboard-footer">
+            CopyRight by @MasHar Tahun 2026
+        </div>
+
+    </div>
+</section>
+
 <script>
+
+// =====================================
+// TAMBAHAN - SISTEM INFORMASI SPREADSHEET
+// URL diisi setelah Code.gs di-deploy
+// =====================================
+const INFORMASI_API_URL = "https://script.google.com/macros/s/AKfycbxje8I-2cb0Dc6JrvDQXFtNs88cZrQkLX17IacASnMV8zt7F3JlvSfzW6fQ9AD91qnQVw/exec";
+// Spreadsheet yang digunakan oleh backend:
+// 11dg5FFeAXlCZBMmkbhUNziv7tFL3hi_KVTmF5gzpYI4
+
+let adminInformasiTerverifikasi = false;
+
+function muatInformasi(){
+    const box = document.getElementById("informasiContent");
+    if (!box) return;
+
+    box.textContent = "Memuat informasi...";
+
+    if (INFORMASI_API_URL.indexOf("GANTI_DENGAN") === 0) {
+        box.textContent =
+            "Sistem informasi belum terhubung ke Google Spreadsheet.";
+        return;
+    }
+
+    const callback = "dizaInfo_" + Date.now();
+
+    window[callback] = function(response){
+        try{
+            if(response && response.ok){
+                box.textContent = response.data || "Belum ada informasi.";
+            }else{
+                box.textContent = "Informasi belum dapat dimuat.";
+            }
+        }catch(e){
+            box.textContent = "Terjadi kesalahan saat memuat informasi.";
+        }
+
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    const script = document.createElement("script");
+    script.src =
+        INFORMASI_API_URL +
+        "?action=get&callback=" +
+        encodeURIComponent(callback);
+
+    script.onerror = function(){
+        box.textContent = "Gagal terhubung ke server informasi.";
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    document.body.appendChild(script);
+}
+
+function bukaLoginInformasi(){
+    document.getElementById("informasiAdminButtonArea").style.display = "none";
+    document.getElementById("informasiPasswordArea").style.display = "block";
+    document.getElementById("informasiPassword").value = "";
+    document.getElementById("informasiPasswordError").style.display = "none";
+    document.getElementById("informasiStatus").textContent = "";
+    setTimeout(() => {
+        document.getElementById("informasiPassword").focus();
+    }, 100);
+}
+
+function tutupLoginInformasi(){
+    document.getElementById("informasiPasswordArea").style.display = "none";
+    document.getElementById("informasiAdminButtonArea").style.display = "flex";
+    document.getElementById("informasiPassword").value = "";
+    document.getElementById("informasiPasswordError").style.display = "none";
+}
+
+function verifikasiAdminInformasi(){
+    const password =
+        document.getElementById("informasiPassword").value;
+
+    if(!password){
+        document.getElementById("informasiPasswordError").textContent =
+            "Password wajib diisi.";
+        document.getElementById("informasiPasswordError").style.display = "block";
+        return;
+    }
+
+    if(INFORMASI_API_URL.indexOf("GANTI_DENGAN") === 0){
+        document.getElementById("informasiPasswordError").textContent =
+            "URL Google Apps Script belum dipasang.";
+        document.getElementById("informasiPasswordError").style.display = "block";
+        return;
+    }
+
+    const callback = "dizaVerify_" + Date.now();
+
+    window[callback] = function(response){
+        if(response && response.ok && response.valid){
+            adminInformasiTerverifikasi = true;
+
+            document.getElementById("informasiPasswordArea").style.display = "none";
+            document.getElementById("informasiAdminButtonArea").style.display = "none";
+            document.getElementById("informasiEditorArea").style.display = "block";
+            document.getElementById("informasiEditor").value =
+                response.data || "";
+
+            document.getElementById("informasiStatus").textContent =
+                "Mode edit aktif.";
+
+        }else{
+            document.getElementById("informasiPasswordError").textContent =
+                "Password admin salah.";
+            document.getElementById("informasiPasswordError").style.display =
+                "block";
+        }
+
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    const script = document.createElement("script");
+    script.src =
+        INFORMASI_API_URL +
+        "?action=verify&password=" +
+        encodeURIComponent(password) +
+        "&callback=" +
+        encodeURIComponent(callback);
+
+    script.onerror = function(){
+        document.getElementById("informasiPasswordError").textContent =
+            "Gagal terhubung ke server.";
+        document.getElementById("informasiPasswordError").style.display =
+            "block";
+
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    document.body.appendChild(script);
+}
+
+function simpanInformasi(){
+    if(!adminInformasiTerverifikasi) return;
+
+    const password =
+        document.getElementById("informasiPassword").value;
+
+    const isi =
+        document.getElementById("informasiEditor").value;
+
+    if(!isi.trim()){
+        document.getElementById("informasiStatus").textContent =
+            "Informasi tidak boleh kosong.";
+        return;
+    }
+
+    document.getElementById("informasiStatus").textContent =
+        "Menyimpan informasi...";
+
+    const callback = "dizaSave_" + Date.now();
+
+    window[callback] = function(response){
+        if(response && response.ok){
+            document.getElementById("informasiContent").textContent = isi;
+            document.getElementById("informasiStatus").textContent =
+                "✅ Informasi berhasil disimpan.";
+
+            document.getElementById("informasiEditorArea").style.display =
+                "none";
+            document.getElementById("informasiAdminButtonArea").style.display =
+                "flex";
+
+            adminInformasiTerverifikasi = false;
+        }else{
+            document.getElementById("informasiStatus").textContent =
+                "❌ Informasi gagal disimpan.";
+        }
+
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    const script = document.createElement("script");
+    script.src =
+        INFORMASI_API_URL +
+        "?action=save" +
+        "&password=" + encodeURIComponent(password) +
+        "&data=" + encodeURIComponent(isi) +
+        "&callback=" + encodeURIComponent(callback);
+
+    script.onerror = function(){
+        document.getElementById("informasiStatus").textContent =
+            "❌ Gagal terhubung ke server.";
+        try{
+            delete window[callback];
+            script.remove();
+        }catch(e){}
+    };
+
+    document.body.appendChild(script);
+}
+
+function batalEditInformasi(){
+    adminInformasiTerverifikasi = false;
+    document.getElementById("informasiEditorArea").style.display = "none";
+    document.getElementById("informasiPasswordArea").style.display = "none";
+    document.getElementById("informasiAdminButtonArea").style.display = "flex";
+    document.getElementById("informasiStatus").textContent = "";
+    document.getElementById("informasiPassword").value = "";
+}
+
+
 // =====================================
 // NAVIGASI HALAMAN
 // =====================================
@@ -2412,6 +2869,10 @@ function showPage(pageId) {
             top: 0,
             behavior: "instant"
         });
+
+        if (pageId === "informasiPage") {
+            muatInformasi();
+        }
     }
 }
 
